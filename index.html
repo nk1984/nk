@@ -1,0 +1,559 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* fieldset{
+      background: linear-gradient(#dde4f9, #ebf8ee, #fdebeb);
+    } */
+  </style>
+</head>
+<body>
+
+<div class="grid">
+  <div class="panel border-color1">
+    <div class="panel-header background-color1 border-bottom-color1">
+      <span class="title title-color1">User</span>
+   </div>
+    <div class="panel-body body-background-color1">
+
+      <form method="GET" action="information.html">
+
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="firstName" name="firstName" field="fn" class="w200" required/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lastName" name="lastName"  field="ln" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="text" id="age" name="age" field="ag" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" group="gender" value="male" id="male" name="gender" field="ma"  /> <span>Male</span>
+              <input type="radio" group="gender" value="female" id="female" name="gender" field="fe"  /> <span>Female</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" group="hobbies" value="reading" id="reading" name="hobbies" field="re"  /> <span>Reading</span>
+              <input type="checkbox" group="hobbies" value="watching" id="watching" name="hobbies" field="wa"  /> <span>Watching</span>
+              <input type="checkbox" group="hobbies" value="playing" id="playing" name="hobbies" field="pl"  /> <span>Playing</span>
+              <input type="checkbox" group="hobbies" value="cooking" id="cooking" name="hobbies" field="co"  /> <span>Cooking</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address"  field="ad" class="w200" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Province:</td>
+            <td>
+              <select id="province" name="province"  field="pr" class="w200" required>
+                <option value="">Choose Province...</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="New Foundland And Labrador">New Foundland And Labrador</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavat">Nunavat</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatewan">Saskatewan</option>            
+                <option value="Yukon">Yukon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select id="country" name="country" field="cn" class="w200" required>
+                <option value="">Choose Country...</option>
+                <option value="Canada">Canada</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td colspan="2">
+              <button class="w100 background-color1 border-color1">Save</button>
+              <button class="w100 background-color1 border-color1">Cancel</button>
+            </td>
+            
+          </tr>
+        </table>
+      
+    </form>
+
+    </div>
+  </div>
+
+
+  <div class="panel border-color2">
+    <div class="panel-header background-color2 border-bottom-color2">
+      <span class="title title-color2">User</span>
+   </div>
+    <div class="panel-body body-background-color2">
+
+      <form method="GET" action="information.html">
+
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="firstName" name="firstName" field="fn" class="w200" required/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lastName" name="lastName"  field="ln" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="text" id="age" name="age" field="ag" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" group="gender" value="male" id="male" name="gender" field="ma"  /> <span>Male</span>
+              <input type="radio" group="gender" value="female" id="female" name="gender" field="fe"  /> <span>Female</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" group="hobbies" value="reading" id="reading" name="hobbies" field="re"  /> <span>Reading</span>
+              <input type="checkbox" group="hobbies" value="watching" id="watching" name="hobbies" field="wa"  /> <span>Watching</span>
+              <input type="checkbox" group="hobbies" value="playing" id="playing" name="hobbies" field="pl"  /> <span>Playing</span>
+              <input type="checkbox" group="hobbies" value="cooking" id="cooking" name="hobbies" field="co"  /> <span>Cooking</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address"  field="ad" class="w200" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Province:</td>
+            <td>
+              <select id="province" name="province"  field="pr" class="w200" required>
+                <option value="">Choose Province...</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="New Foundland And Labrador">New Foundland And Labrador</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavat">Nunavat</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatewan">Saskatewan</option>            
+                <option value="Yukon">Yukon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select id="country" name="country" field="cn" class="w200" required>
+                <option value="">Choose Country...</option>
+                <option value="Canada">Canada</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td colspan="2">
+              <button class="w100 background-color2 border-color2">Save</button>
+              <button class="w100 background-color2 border-color2">Cancel</button>
+            </td>
+            
+          </tr>
+        </table>
+      
+    </form>
+
+    </div>
+  </div>
+
+
+  <div class="panel border-color3">
+    <div class="panel-header background-color3 border-bottom-color3">
+      <span class="title title-color3">User</span>
+   </div>
+    <div class="panel-body body-background-color3">
+
+      <form method="GET" action="information.html" name="form3">
+
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="firstName" name="firstName" field="fn" class="w200" required/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lastName" name="lastName"  field="ln" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="text" id="age" name="age" field="ag" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" group="gender" value="male" id="male" name="gender" field="ma"  /> <span>Male</span>
+              <input type="radio" group="gender" value="female" id="female" name="gender" field="fe"  /> <span>Female</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" group="hobbies" value="reading" id="reading" name="hobbies" field="re"  /> <span>Reading</span>
+              <input type="checkbox" group="hobbies" value="watching" id="watching" name="hobbies" field="wa"  /> <span>Watching</span>
+              <input type="checkbox" group="hobbies" value="playing" id="playing" name="hobbies" field="pl"  /> <span>Playing</span>
+              <input type="checkbox" group="hobbies" value="cooking" id="cooking" name="hobbies" field="co"  /> <span>Cooking</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address"  field="ad" class="w200" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Province:</td>
+            <td>
+              <select id="province" name="province"  field="pr" class="w200" required>
+                <option value="">Choose Province...</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="New Foundland And Labrador">New Foundland And Labrador</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavat">Nunavat</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatewan">Saskatewan</option>            
+                <option value="Yukon">Yukon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select id="country" name="country" field="cn" class="w200" required>
+                <option value="">Choose Country...</option>
+                <option value="Canada">Canada</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td colspan="2">
+              <button class="w100 background-color3 border-color3">Save</button>
+              <button class="w100 background-color3 border-color3">Cancel</button>
+            </td>
+            
+          </tr>
+        </table>
+      
+    </form>
+    </div>
+  </div>
+
+  <!-- Color 4-->
+  <div class="panel border-color4">
+    <div class="panel-header background-color4 border-bottom-color4">
+      <span class="title title-color4">User</span>
+   </div>
+    <div class="panel-body body-background-color4">
+
+      <form method="GET" action="information.html" name="form4">
+
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="firstName" name="firstName" field="fn" class="w200" required/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lastName" name="lastName"  field="ln" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="text" id="age" name="age" field="ag" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" group="gender" value="male" id="male" name="gender" field="ma"  /> <span>Male</span>
+              <input type="radio" group="gender" value="female" id="female" name="gender" field="fe"  /> <span>Female</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" group="hobbies" value="reading" id="reading" name="hobbies" field="re"  /> <span>Reading</span>
+              <input type="checkbox" group="hobbies" value="watching" id="watching" name="hobbies" field="wa"  /> <span>Watching</span>
+              <input type="checkbox" group="hobbies" value="playing" id="playing" name="hobbies" field="pl"  /> <span>Playing</span>
+              <input type="checkbox" group="hobbies" value="cooking" id="cooking" name="hobbies" field="co"  /> <span>Cooking</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address"  field="ad" class="w200" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Province:</td>
+            <td>
+              <select id="province" name="province"  field="pr" class="w200" required>
+                <option value="">Choose Province...</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="New Foundland And Labrador">New Foundland And Labrador</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavat">Nunavat</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatewan">Saskatewan</option>            
+                <option value="Yukon">Yukon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select id="country" name="country" field="cn" class="w200" required>
+                <option value="">Choose Country...</option>
+                <option value="Canada">Canada</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td colspan="2">
+              <button class="w100 background-color4 border-color4">Save</button>
+              <button class="w100 background-color4 border-color4">Cancel</button>
+            </td>
+            
+          </tr>
+        </table>
+      
+    </form>
+    </div>
+  </div>
+
+  <!-- Color 5-->
+  <div class="panel border-color5">
+    <div class="panel-header background-color5 border-bottom-color5">
+      <span class="title title-color5">User</span>
+   </div>
+    <div class="panel-body body-background-color5">
+
+      <form method="GET" action="information.html" name="form5">
+
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="firstName" name="firstName" field="fn" class="w200" required/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lastName" name="lastName"  field="ln" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="text" id="age" name="age" field="ag" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" group="gender" value="male" id="male" name="gender" field="ma"  /> <span>Male</span>
+              <input type="radio" group="gender" value="female" id="female" name="gender" field="fe"  /> <span>Female</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" group="hobbies" value="reading" id="reading" name="hobbies" field="re"  /> <span>Reading</span>
+              <input type="checkbox" group="hobbies" value="watching" id="watching" name="hobbies" field="wa"  /> <span>Watching</span>
+              <input type="checkbox" group="hobbies" value="playing" id="playing" name="hobbies" field="pl"  /> <span>Playing</span>
+              <input type="checkbox" group="hobbies" value="cooking" id="cooking" name="hobbies" field="co"  /> <span>Cooking</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address"  field="ad" class="w200" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Province:</td>
+            <td>
+              <select id="province" name="province"  field="pr" class="w200" required>
+                <option value="">Choose Province...</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="New Foundland And Labrador">New Foundland And Labrador</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavat">Nunavat</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatewan">Saskatewan</option>            
+                <option value="Yukon">Yukon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select id="country" name="country" field="cn" class="w200" required>
+                <option value="">Choose Country...</option>
+                <option value="Canada">Canada</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td colspan="2">
+              <button class="w100 background-color5 border-color5">Save</button>
+              <button class="w100 background-color5 border-color5">Cancel</button>
+            </td>
+            
+          </tr>
+        </table>
+      
+    </form>
+    </div>
+  </div>
+
+  <!-- Color 6-->
+  <div class="panel border-color6">
+    <div class="panel-header background-color6 border-bottom-color6">
+      <span class="title title-color6">User</span>
+   </div>
+    <div class="panel-body body-background-color6">
+
+      <form method="GET" action="information.html" name="form6">
+
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="firstName" name="firstName" field="fn" class="w200" required/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lastName" name="lastName"  field="ln" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="text" id="age" name="age" field="ag" class="w200" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" group="gender" value="male" id="male" name="gender" field="ma"  /> <span>Male</span>
+              <input type="radio" group="gender" value="female" id="female" name="gender" field="fe"  /> <span>Female</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" group="hobbies" value="reading" id="reading" name="hobbies" field="re"  /> <span>Reading</span>
+              <input type="checkbox" group="hobbies" value="watching" id="watching" name="hobbies" field="wa"  /> <span>Watching</span>
+              <input type="checkbox" group="hobbies" value="playing" id="playing" name="hobbies" field="pl"  /> <span>Playing</span>
+              <input type="checkbox" group="hobbies" value="cooking" id="cooking" name="hobbies" field="co"  /> <span>Cooking</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address"  field="ad" class="w200" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Province:</td>
+            <td>
+              <select id="province" name="province"  field="pr" class="w200" required>
+                <option value="">Choose Province...</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="New Foundland And Labrador">New Foundland And Labrador</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavat">Nunavat</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatewan">Saskatewan</option>            
+                <option value="Yukon">Yukon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select id="country" name="country" field="cn" class="w200" required>
+                <option value="">Choose Country...</option>
+                <option value="Canada">Canada</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td colspan="2">
+              <button class="w100 background-color6 border-color6">Save</button>
+              <button class="w100 background-color6 border-color6">Cancel</button>
+            </td>
+            
+          </tr>
+        </table>
+      
+    </form>
+    </div>
+  </div>
+
+</div>
+
+  <!-- <div class="line line1"></div>
+  <div class="line line2"></div>
+  <div class="line line3"></div> -->
+
+</body>
+</html>

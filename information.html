@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        table td:first-child {
+            width: 200px;
+            box-shadow: 1px 1px 1px #999;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>User Information</legend>
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><span id="fn"></span></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><span id="ln"></span></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><span id="ag"></span></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><span id="ge"></span></td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td><span id="ho"></span></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><span id="ad"></span></td>
+        </tr>
+        <tr>
+            <td>Province:</td>
+            <td><span id="pr"></span></td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td><span id="co"></span></td>
+        </tr>
+    </table>
+</fieldset>
+    <script>
+        let url = new URLSearchParams(location.search.replace('?','')),
+            qs = Object.fromEntries(url);
+            console.log(qs);
+
+            document.querySelector('#fn').textContent = qs.firstName;
+            document.querySelector('#ln').textContent = qs.lastName;
+            document.querySelector('#ag').textContent = qs.age;
+            document.querySelector('#ge').textContent = qs.gender;
+            document.querySelector('#ho').textContent = qs.hobbies;
+            document.querySelector('#ad').textContent = qs.address;
+            document.querySelector('#pr').textContent = qs.province;
+            document.querySelector('#co').textContent = qs.country;
+    </script>
+</body>
+</html>
